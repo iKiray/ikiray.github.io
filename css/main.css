@@ -1,0 +1,25 @@
+.background {
+    background-image: url('/images/background.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.home {
+    color: white;
+    border: 1px solid white;
+    padding: 5px;
+    text-decoration: none;
+    backdrop-filter: blur(10px);
+}
+
+.pageheaders {
+    text-align: center;
+    color: white;
+    border: 1px solid white;
+    padding: 10px;
+    backdrop-filter: blur(10px);
+    margin: auto;
+    width: 25%;
+}
+
