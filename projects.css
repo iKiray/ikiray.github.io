@@ -5,6 +5,7 @@ body {
 #back {
     border: 2px solid white;
     background-color: black;
+    padding: 5x 11px;
 }
 
 h1 {
