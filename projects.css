@@ -1,15 +1,23 @@
 body {
     background-color: midnightblue;
 }
+
+#back {
+    border: 2px solid white;
+    background-color: black;
+}
+
 h1 {
     text-align: center;
     color: white;
     border: 1px solid white;
     padding: 10px;
 }
+
 h2 {
     color: white;
 }
+
 p {
     color: white;
     margin: 20px;
