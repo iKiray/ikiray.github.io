@@ -1,0 +1,9 @@
+.topic {
+    color: white;
+    border: 1px solid white;
+    padding: 5px;
+    backdrop-filter: blur(10px);
+    margin: auto;
+    width: 25%;
+    text-align: center;
+}
