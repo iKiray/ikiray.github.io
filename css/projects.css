@@ -6,17 +6,3 @@
     margin: auto;
     width: 50%;
 }
-
-#github {
-    text-align: center;
-    border: 1px solid white;
-    padding: 10px;
-    backdrop-filter: blur(10px);
-    margin: auto;
-    width: 25%;
-}
-
-#githublink {
-    color: white;
-    text-decoration: none;
-}
