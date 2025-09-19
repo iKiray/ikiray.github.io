@@ -3,7 +3,17 @@
     border: 1px solid white;
     padding: 5px;
     backdrop-filter: blur(10px);
-    margin: auto;
-    width: 25%;
+    width: 15%;
     text-align: center;
+}
+
+.topictext {
+    color: white;
+    text-align: left;
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 5px;
+    backdrop-filter: blur(10px);
+    margin-left: 50px;
+    width: 35%;
 }
