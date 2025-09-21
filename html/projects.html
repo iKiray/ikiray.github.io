@@ -7,6 +7,7 @@
         <link rel="stylesheet" href="../css/main.css">
         <link rel="stylesheet" href="../css/projects.css">
         <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+        <script src="../js/projects.js"></script>
     </head>
     <body class="background">
         <div>
@@ -32,8 +33,11 @@
         <div class="projects">
             <h2>
                 Project 1: Github Pages
+                <button class="textbutton" onclick="p1showhide()">
+                    Show/Hide
+                </button>
             </h2>
-            <p>
+            <p id="p1" style="display: none;">
                 This project is this current github pages stack you are viewing.
             </p>
         </div>
@@ -43,8 +47,11 @@
         <div class="projects">
             <h2>
                 Project 2: Undecided
+                <button class="textbutton" onclick="p2showhide()">
+                    Show/Hide
+                </button>
             </h2>
-            <p>
+            <p id="p2" style="display: none;">
                 Still thinking.
             </p>
         </div>

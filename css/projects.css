@@ -6,3 +6,12 @@
     margin: auto;
     width: 50%;
 }
+
+.textbutton {
+    color: white;
+    text-align: center;
+    border: 1px solid white;
+    padding: 2px;
+    background-color: transparent;
+    border-radius: 5px;
+}
