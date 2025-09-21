@@ -10,8 +10,9 @@
 .textbutton {
     color: white;
     text-align: center;
+    font-weight: bold;
     border: 1px solid white;
-    padding: 2px;
+    padding: 4px;
     background-color: transparent;
     border-radius: 5px;
 }
