@@ -1,13 +1,67 @@
 
 .navbar {
-    text-align: center;
+    position: relative;
     border: 1px solid white;
-    padding: 5px;
     backdrop-filter: blur(10px);
     border-radius: 10px;
-        a {
-            text-decoration: none;
+    display: flex;
+    text-align: center;
+
+    .navdir {
+        button {
             color: white;
-            margin-right: 30px;
+            background-color: transparent;
+            border-radius: 10px;
+            border-color: transparent;
+            padding: 10px;
         }
+
+        &:hover .dir-list {
+            display: block;
+        }
+    }
+
+    .navpro {
+        button {
+            color: white;
+            background-color: transparent;
+            border-radius: 10px;
+            border-color: transparent;
+            padding: 10px;
+        }
+
+        &:hover .pro-list {
+            display: block;
+        }
+    }
+}
+
+.dir-list {
+    display: none;
+    position: absolute;
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 10px;
+
+    a {
+        color: white;
+        text-decoration: none;
+        display: block;
+        padding: 10px;
+    }
+}
+
+.pro-list {
+    display: none;
+    position: absolute;
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 10px;
+
+    a {
+        color: white;
+        text-decoration: none;
+        display: block;
+        padding: 10px;
+    }
 }

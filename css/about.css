@@ -1,25 +1,29 @@
-.topic {
-    h2 {
-        color: white;
-        border: 1px solid white;
-        padding: 5px;
-        backdrop-filter: blur(10px);
-        width: 15%;
-        text-align: center;
-    }
-    ul {
+.topics {
+    margin-left: 20px;
+    margin-right: 20px;
+    display: flex;
+    gap: 20px;
+
+    div {
         border: 1px solid white;
         border-radius: 10px;
-        text-align: left;
-        margin-left: 50px;
-        width: 35%;
-        backdrop-filter: blur(10px);
-        padding-bottom: 5px;
-        padding-top: 5px;
+        backdrop-filter: blur(20px);
+        padding: 10px;
 
-        li {
+        h2 {
             color: white;
-            padding: 2px;
+            padding: 5px;
+            text-align: center;
+        }
+
+        ul {
+            border-radius: 10px;
+
+            li {
+                color: white;
+                padding: 5px;
+            }
         }
     }
+
 }
