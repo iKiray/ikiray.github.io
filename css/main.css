@@ -5,16 +5,6 @@
     background-size: cover;
 }
 
-.nav {
-    color: white;
-    text-align: center;
-    border: 1px solid white;
-    padding: 5px;
-    text-decoration: none;
-    backdrop-filter: blur(10px);
-    border-radius: 10px;
-}
-
 .pageheaders {
     text-align: center;
     color: white;
