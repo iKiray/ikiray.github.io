@@ -3,16 +3,8 @@ p {
     color: white;
     backdrop-filter: blur(10px);
     border: 1px solid white;
-    padding: 5px;
+    padding: 50px;
     margin: auto;
-    width: 25%;
-}
-
-.pages {
-    font-size: 50px;
-    color: white;
-    border: 1px solid white;
-    padding: 10px;
-    text-decoration: none;
-    backdrop-filter: blur(10px);
+    width: 50%;
+    font-size: 20px;
 }
