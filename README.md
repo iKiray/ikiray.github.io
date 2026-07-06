@@ -1,5 +1,3 @@
-# GitHub Pages
+# My GitHub Page
 
-Hi, welcome to my GitHub Pages repo.
-
-[Click here to check it out!](https://ikiray.github.io/)
+This page acts as a way to get to know me, my projects, and what I am learning.
