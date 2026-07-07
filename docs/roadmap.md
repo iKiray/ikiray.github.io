@@ -156,14 +156,14 @@ The website should be publicly accessible through GitHub Pages.
 
 ### Phase 1 Completion Checklist
 
-- [ ] GitHub repository created
-- [ ] Basic file structure created
-- [ ] Main pages created
-- [ ] Navigation added
-- [ ] Basic CSS added
-- [ ] Site works on mobile
-- [ ] Site deployed with GitHub Pages
-- [ ] README explains the purpose of the project
+- [x] GitHub repository created
+- [x] Basic file structure created
+- [x] Main pages created
+- [x] Navigation added
+- [x] Basic CSS added
+- [x] Site works on mobile
+- [x] Site deployed with GitHub Pages
+- [x] README explains the purpose of the project
 
 ---
 
@@ -500,16 +500,16 @@ Avoid listing:
 
 ### Phase 2 Completion Checklist
 
-- [ ] Home page completed
-- [ ] About page completed
-- [ ] Skills page completed
-- [ ] Projects page created
-- [ ] At least one project added
-- [ ] Resume page completed
-- [ ] Contact page completed
-- [ ] Resume PDF linked
-- [ ] GitHub and LinkedIn linked
-- [ ] Site looks clean on mobile and desktop
+- [x] Home page completed
+- [x] About page completed
+- [x] Skills page completed
+- [x] Projects page created
+- [x] At least one project added
+- [x] Resume page completed
+- [x] Contact page completed
+- [ ] Resume PDF linked (download button exists in `resume.html`, but `assets/resume/resume.pdf` has not been added yet — the link currently 404s)
+- [x] GitHub and LinkedIn linked
+- [x] Site looks clean on mobile and desktop
 
 ---
 
