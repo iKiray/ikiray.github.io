@@ -1,48 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Resume — Sky's IT Portfolio</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resume | Sky Yeung</title>
+  <meta name="description" content="Resume of Sky Yeung, an aspiring IT professional with hands-on experience in Linux, scripting, Docker, and home lab projects.">
+  <meta property="og:title" content="Resume | Sky Yeung">
+  <meta property="og:description" content="Resume and qualifications for IT support, system administration, and DevOps roles.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/og-image.png">
+  <link rel="icon" href="assets/favicon.png">
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
   <header>
-    <p class="site-title">Sky's IT Portfolio</p>
+    <p class="site-title">Sky Yeung</p>
     <p>Aspiring System Administrator | Future DevOps Engineer</p>
   </header>
 
-  <nav aria-label="Main navigation">
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="projects.html">Projects</a>
-    <a href="skills.html">Skills</a>
-    <a href="resume.html" class="active" aria-current="page">Resume</a>
-    <a href="contact.html">Contact</a>
-  </nav>
+  <div class="nav-container">
+    <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu">Menu</button>
+    <nav id="nav-menu" aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="skills.html">Skills</a>
+      <a href="projects.html">Projects</a>
+      <a href="resume.html" aria-current="page">Resume</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
 
-  <main>
+  <main id="main-content">
     <h1>Resume</h1>
 
     <section>
       <h2>Professional Summary</h2>
       <p>
-        Aspiring IT professional building skills in system administration, networking,
-        scripting, and troubleshooting. Focused on hands-on learning through home lab
-        projects, command-line practice, and documentation. Seeking an entry-level help desk
-        or junior system administrator role to apply and grow technical skills.
+        Aspiring IT professional building hands-on experience with Linux, scripting, Docker,
+        Git, and automation through a self-hosted home lab. Focused on help desk, system
+        administration, and future DevOps roles.
       </p>
     </section>
 
     <section>
       <h2>Technical Skills</h2>
       <ul>
-        <li><strong>Operating Systems:</strong> Windows, Linux (Ubuntu, Debian basics)</li>
-        <li><strong>Command Line:</strong> Bash, PowerShell, Git</li>
-        <li><strong>Scripting:</strong> Bash scripting, PowerShell scripting (learning)</li>
-        <li><strong>Networking:</strong> TCP/IP, DNS, DHCP, SSH (foundational knowledge)</li>
-        <li><strong>Tools:</strong> GitHub, VS Code, VirtualBox, GitHub Pages</li>
-        <li><strong>Documentation:</strong> Markdown, technical writing</li>
+        <li><strong>Operating Systems:</strong> Windows, Ubuntu, Debian, Windows Server (learning)</li>
+        <li><strong>Scripting:</strong> Bash, Python (learning), PowerShell (learning)</li>
+        <li><strong>Containers:</strong> Docker, Docker Compose</li>
+        <li><strong>Version Control and CI/CD:</strong> Git, GitHub, GitHub Actions (learning)</li>
+        <li><strong>Storage and Home Lab:</strong> TrueNAS, self-hosting, Linux services</li>
+        <li><strong>Networking:</strong> SSH, TCP/IP, DNS (learning), DHCP (learning)</li>
       </ul>
     </section>
 
@@ -50,20 +60,21 @@
       <h2>Projects</h2>
       <ul>
         <li>
-          <strong>Home Lab Documentation</strong> — Set up and documented virtual machines,
-          networking, and services in a home lab environment.
+          <strong><a href="projects.html">Self-Hosted Home Lab</a></strong>
+          — Docker, TrueNAS, and multiple operating systems for practicing Linux administration,
+          containers, storage, and automation.
         </li>
         <li>
-          <strong>PowerShell Practice Scripts</strong> — Wrote scripts for user management,
-          file operations, and system information gathering.
+          <strong><a href="projects.html">Bash Backup Script</a></strong>
+          — Automated home lab data backups with logging and timestamped folders.
         </li>
         <li>
-          <strong>Bash Command Practice</strong> — Practiced command-line tools and shell
-          scripting on Linux systems.
+          <strong><a href="projects.html">System Health Monitor</a></strong>
+          — Script that checks disk, memory, and service status with threshold warnings.
         </li>
         <li>
-          <strong>Portfolio Website</strong> — Built and deployed a personal portfolio site
-          using HTML, CSS, JavaScript, and GitHub Pages.
+          <strong><a href="projects.html">Portfolio Website</a></strong>
+          — Built and deployed a personal portfolio site using HTML, CSS, JavaScript, and GitHub Pages.
         </li>
       </ul>
     </section>
@@ -71,33 +82,51 @@
     <section>
       <h2>Education</h2>
       <p>
-        Self-directed IT learning through online resources, home lab practice, and
-        hands-on projects. Focused on building practical skills in system administration,
-        networking, and automation.
+        <strong>Computer Systems Technician</strong> — Centennial College
       </p>
     </section>
 
     <section>
       <h2>Certifications</h2>
+      <p>Currently studying toward:</p>
+      <ul>
+        <li>CompTIA A+</li>
+        <li>Linux fundamentals</li>
+        <li>Networking fundamentals</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Experience</h2>
+      <h3>Document Scanning Clerk — Union Digital</h3>
       <p>
-        Currently studying for certifications. This section will be updated as
-        certifications are earned.
+        Managed document scanning workflows, maintained file organization, and followed
+        detailed procedures for document handling. Developed attention to detail, time
+        management, and the ability to work independently on repetitive tasks with accuracy.
+      </p>
+
+      <h3>Previous Experience — Amphenol CTI</h3>
+      <p>
+        Gained experience in a manufacturing environment, developed troubleshooting skills,
+        attention to detail, and the ability to follow technical procedures and documentation.
       </p>
     </section>
 
     <section>
-      <h2>Resume Download</h2>
+      <h2>Download</h2>
       <p>
-        A downloadable PDF version of my resume will be available here as the portfolio
-        develops.
+        <a href="assets/resume/resume.pdf" download class="btn">Download Resume (PDF)</a>
       </p>
-      <p><em>Note: Resume PDF will be added in a future update.</em></p>
     </section>
   </main>
 
   <footer>
-    <p>&copy; 2026 Sky. Built with HTML, CSS, and JavaScript.</p>
-    <p>Built as part of my IT learning journey.</p>
+    <p>Sky Yeung</p>
+    <div class="footer-links">
+      <a href="https://github.com/iKiray" target="_blank" rel="noopener noreferrer">GitHub</a>
+      <a href="https://www.linkedin.com/in/ykuntin/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+    </div>
+    <p>&copy; <span id="year">2026</span> Sky Yeung. Built with HTML, CSS, JavaScript, and GitHub Pages.</p>
   </footer>
 
   <script src="js/main.js" defer></script>

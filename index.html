@@ -1,85 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Sky's IT Portfolio</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sky Yeung | Aspiring System Administrator</title>
+  <meta name="description" content="Portfolio of Sky Yeung, an aspiring IT and system administration professional based in Toronto, building hands-on projects in Linux, scripting, Docker, and automation.">
+  <meta property="og:title" content="Sky Yeung | Aspiring System Administrator">
+  <meta property="og:description" content="Hands-on IT, Linux, and automation projects from a self-hosted home lab.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/og-image.png">
+  <link rel="icon" href="assets/favicon.png">
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
   <header>
-    <p class="site-title">Sky's IT Portfolio</p>
+    <p class="site-title">Sky Yeung</p>
     <p>Aspiring System Administrator | Future DevOps Engineer</p>
   </header>
 
-  <nav aria-label="Main navigation">
-    <a href="index.html" class="active" aria-current="page">Home</a>
-    <a href="about.html">About</a>
-    <a href="projects.html">Projects</a>
-    <a href="skills.html">Skills</a>
-    <a href="resume.html">Resume</a>
-    <a href="contact.html">Contact</a>
-  </nav>
+  <div class="nav-container">
+    <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu">Menu</button>
+    <nav id="nav-menu" aria-label="Main navigation">
+      <a href="index.html" aria-current="page">Home</a>
+      <a href="about.html">About</a>
+      <a href="skills.html">Skills</a>
+      <a href="projects.html">Projects</a>
+      <a href="resume.html">Resume</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
 
-  <main>
-    <div class="intro">
-      <h1>Welcome to My IT Portfolio</h1>
-      <p class="subtitle">
-        This site documents my technical projects, learning progress, and hands-on practice
-        as I build skills toward help desk, system administration, and DevOps-related roles.
+  <main id="main-content">
+    <div class="hero">
+      <h1>Sky Yeung</h1>
+      <p class="subtitle">Aspiring System Administrator | Future DevOps Engineer</p>
+      <p class="intro-text">
+        I am building a foundation in Linux, scripting, networking, containers, and automation
+        through hands-on projects in my home lab, and I document what I learn along the way.
       </p>
-      <div class="quick-links">
-        <a href="projects.html">Projects</a>
-        <a href="skills.html">Skills</a>
-        <a href="resume.html">Resume</a>
-        <a href="contact.html">Contact</a>
+      <div class="hero-links">
+        <a href="projects.html" class="btn">View Projects</a>
+        <a href="resume.html" class="btn btn-secondary">View Resume</a>
+        <a href="contact.html" class="btn btn-secondary">Contact Me</a>
       </div>
     </div>
 
     <section>
       <h2>Current Focus</h2>
       <p>
-        I am currently focused on building a strong foundation in IT fundamentals,
-        including command-line tools, basic networking, scripting, and system administration concepts.
-        This portfolio is part of my learning journey.
+        I am currently focused on Linux administration, Bash and Python scripting, Docker,
+        Git and GitHub, and networking fundamentals. I practice these by running a self-hosted
+        home lab and building small tools that solve real problems.
       </p>
     </section>
 
     <section>
       <h2>Career Goals</h2>
       <p>
-        My goal is to work in a help desk or junior system administrator role while continuing
-        to develop skills in Linux, automation, and cloud infrastructure. Over time, I plan to
-        move toward DevOps-related positions.
+        My goal is to start in IT support, help desk, or service desk, keep building system
+        administration and Linux skills, and grow toward DevOps and infrastructure automation.
       </p>
     </section>
 
     <section>
       <h2>Featured Projects</h2>
-      <div class="project-grid">
+      <div class="card-grid">
         <div class="card">
-          <h3>Home Lab Documentation</h3>
+          <h3>Self-Hosted Home Lab</h3>
           <p>
-            Documentation for my home lab setup, including virtual machines, networking,
-            and services I am testing and learning.
+            A home lab running Docker, TrueNAS, and several operating systems that I use to
+            learn Linux administration, containers, storage, and automation by running real services.
           </p>
-          <span class="status in-progress">In Progress</span>
+          <div class="tech-tags">
+            <span class="tech-tag">Docker</span>
+            <span class="tech-tag">TrueNAS</span>
+            <span class="tech-tag">Linux</span>
+            <span class="tech-tag">SSH</span>
+          </div>
+          <a href="projects.html">View details</a>
         </div>
         <div class="card">
           <h3>Portfolio Website</h3>
           <p>
             A personal website built with HTML, CSS, and JavaScript to document my IT
-            learning journey and technical projects.
+            learning journey and technical projects, deployed with GitHub Pages.
           </p>
-          <span class="status in-progress">In Progress</span>
+          <div class="tech-tags">
+            <span class="tech-tag">HTML</span>
+            <span class="tech-tag">CSS</span>
+            <span class="tech-tag">JavaScript</span>
+            <span class="tech-tag">GitHub Pages</span>
+          </div>
+          <a href="projects.html">View details</a>
         </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Quick Links</h2>
+      <div class="quick-links">
+        <a href="resume.html">Resume</a>
+        <a href="https://github.com/iKiray" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="https://www.linkedin.com/in/ykuntin/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="projects.html">Projects</a>
+        <a href="contact.html">Contact</a>
       </div>
     </section>
   </main>
 
   <footer>
-    <p>&copy; 2026 Sky. Built with HTML, CSS, and JavaScript.</p>
-    <p>Built as part of my IT learning journey.</p>
+    <p>Sky Yeung</p>
+    <div class="footer-links">
+      <a href="https://github.com/iKiray" target="_blank" rel="noopener noreferrer">GitHub</a>
+      <a href="https://www.linkedin.com/in/ykuntin/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+    </div>
+    <p>&copy; <span id="year">2026</span> Sky Yeung. Built with HTML, CSS, JavaScript, and GitHub Pages.</p>
   </footer>
 
   <script src="js/main.js" defer></script>

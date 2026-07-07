@@ -1,91 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>About — Sky's IT Portfolio</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About | Sky Yeung</title>
+  <meta name="description" content="Learn about Sky Yeung's path into IT, why Linux and automation matter, and the learning journey toward system administration and DevOps.">
+  <meta property="og:title" content="About | Sky Yeung">
+  <meta property="og:description" content="Learn about Sky Yeung's path into IT, Linux, scripting, and system administration.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/og-image.png">
+  <link rel="icon" href="assets/favicon.png">
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
   <header>
-    <p class="site-title">Sky's IT Portfolio</p>
+    <p class="site-title">Sky Yeung</p>
     <p>Aspiring System Administrator | Future DevOps Engineer</p>
   </header>
 
-  <nav aria-label="Main navigation">
-    <a href="index.html">Home</a>
-    <a href="about.html" class="active" aria-current="page">About</a>
-    <a href="projects.html">Projects</a>
-    <a href="skills.html">Skills</a>
-    <a href="resume.html">Resume</a>
-    <a href="contact.html">Contact</a>
-  </nav>
+  <div class="nav-container">
+    <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu">Menu</button>
+    <nav id="nav-menu" aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="about.html" aria-current="page">About</a>
+      <a href="skills.html">Skills</a>
+      <a href="projects.html">Projects</a>
+      <a href="resume.html">Resume</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
 
-  <main>
-    <h1>About Me</h1>
+  <main id="main-content">
+    <h1>About</h1>
 
     <section>
-      <h2>Background</h2>
+      <h2>Introduction</h2>
       <p>
-        I am building this portfolio to document my progress as I learn IT fundamentals,
-        command-line tools, scripting, troubleshooting, networking, and system administration concepts.
-      </p>
-      <p>
-        My interest in IT comes from a desire to understand how systems work and to solve
-        real-world technical problems. I enjoy the process of learning by doing — building
-        things, breaking them, and figuring out how to fix them.
+        I am an aspiring IT professional focused on building strong fundamentals in Linux,
+        scripting, networking, and automation. I am working toward roles in help desk,
+        system administration, and eventually DevOps.
       </p>
     </section>
 
     <section>
-      <h2>Why IT?</h2>
+      <h2>Why IT</h2>
       <p>
-        Technology is everywhere, and I want to be someone who understands it deeply enough
-        to maintain, troubleshoot, and improve it. IT offers a clear career path with
-        continuous learning opportunities, which appeals to me.
+        I am drawn to IT because I enjoy understanding how systems work and solving real
+        technical problems. Troubleshooting, improving workflows, and helping users
+        are skills I want to develop every day. IT also offers a clear path for continuous
+        learning, which keeps me motivated.
       </p>
     </section>
 
     <section>
-      <h2>Learning Path</h2>
+      <h2>Why Linux</h2>
       <p>
-        I started by exploring basic command-line tools and scripting. From there, I began
-        learning about networking, operating systems, and virtualization. I am now building
-        a home lab to practice these skills in a hands-on environment.
+        I am learning Linux because it runs most servers, cloud infrastructure, and automation
+        tooling, and it is the foundation for the system administration and DevOps work I want
+        to do. Working with the command line, permissions, file systems, and services has already
+        taught me a lot about how computers really work.
       </p>
-      <h3>Key Learning Areas</h3>
-      <ul>
-        <li>Command-line tools (Bash, PowerShell, Git)</li>
-        <li>Operating systems (Windows, Linux)</li>
-        <li>Networking fundamentals</li>
-        <li>Scripting and automation basics</li>
-        <li>Virtualization and home lab setup</li>
-        <li>Version control with Git and GitHub</li>
+    </section>
+
+    <section>
+      <h2>Why Scripting and Automation</h2>
+      <p>
+        Bash, Python, and PowerShell help me automate repetitive tasks, reduce manual errors,
+        and manage systems faster. I am learning scripting so I can work with files, users, logs,
+        and configuration in a repeatable way. Even small scripts save time and reduce mistakes.
+      </p>
+    </section>
+
+    <section>
+      <h2>Target Role</h2>
+      <p>
+        My short-term goal is to move into IT support, help desk, or service desk. From there
+        I want to keep developing system administration, Linux, networking, and automation skills
+        and grow into a DevOps-focused role over time.
+      </p>
+    </section>
+
+    <section>
+      <h2>Learning Timeline</h2>
+      <ul class="timeline">
+        <li>
+          <strong>Started</strong>
+          Set up a self-hosted home lab with Docker, TrueNAS, and multiple operating systems
+        </li>
+        <li>
+          <strong>Building foundations</strong>
+          Started learning Bash and Python from the fundamentals
+        </li>
+        <li>
+          <strong>Practicing</strong>
+          Built practical home lab tools including backup and monitoring scripts
+        </li>
+        <li>
+          <strong>Version control</strong>
+          Practiced Git and GitHub for version control and project documentation
+        </li>
+        <li>
+          <strong>CI/CD</strong>
+          Learning CI/CD with GitHub Actions and self-hosted runners
+        </li>
+        <li class="planned">
+          <strong>Planned next</strong>
+          Ansible and infrastructure automation
+        </li>
       </ul>
-    </section>
-
-    <section>
-      <h2>What I Am Working Toward</h2>
-      <p>
-        My immediate goal is to land a help desk or junior system administrator position.
-        From there, I plan to continue building skills in Linux, automation, containerization,
-        and cloud infrastructure, with the long-term goal of moving into a DevOps role.
-      </p>
-    </section>
-
-    <section>
-      <h2>Outside of IT</h2>
-      <p>
-        When I am not studying or working on my home lab, I enjoy reading about technology,
-        watching tutorials, and experimenting with new tools. I believe consistent practice
-        and documentation are the best ways to learn.
-      </p>
     </section>
   </main>
 
   <footer>
-    <p>&copy; 2026 Sky. Built with HTML, CSS, and JavaScript.</p>
-    <p>Built as part of my IT learning journey.</p>
+    <p>Sky Yeung</p>
+    <div class="footer-links">
+      <a href="https://github.com/iKiray" target="_blank" rel="noopener noreferrer">GitHub</a>
+      <a href="https://www.linkedin.com/in/ykuntin/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+    </div>
+    <p>&copy; <span id="year">2026</span> Sky Yeung. Built with HTML, CSS, JavaScript, and GitHub Pages.</p>
   </footer>
 
   <script src="js/main.js" defer></script>

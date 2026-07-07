@@ -1,104 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Skills — Sky's IT Portfolio</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Skills | Sky Yeung</title>
+  <meta name="description" content="Technical skills Sky Yeung is developing including Linux, Bash, Python, Docker, Git, and networking fundamentals.">
+  <meta property="og:title" content="Skills | Sky Yeung">
+  <meta property="og:description" content="Technical skills in Linux, scripting, Docker, and system administration.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/og-image.png">
+  <link rel="icon" href="assets/favicon.png">
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
   <header>
-    <p class="site-title">Sky's IT Portfolio</p>
+    <p class="site-title">Sky Yeung</p>
     <p>Aspiring System Administrator | Future DevOps Engineer</p>
   </header>
 
-  <nav aria-label="Main navigation">
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="projects.html">Projects</a>
-    <a href="skills.html" class="active" aria-current="page">Skills</a>
-    <a href="resume.html">Resume</a>
-    <a href="contact.html">Contact</a>
-  </nav>
+  <div class="nav-container">
+    <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu">Menu</button>
+    <nav id="nav-menu" aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="skills.html" aria-current="page">Skills</a>
+      <a href="projects.html">Projects</a>
+      <a href="resume.html">Resume</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
 
-  <main>
+  <main id="main-content">
     <h1>Skills</h1>
     <p>
-      This page lists the technical skills I am developing. Skills are organized by category
-      and include honest labels about my current proficiency level.
+      These are the technical skills I am developing, organized by category with honest
+      labels. I only list what I actually use or am actively studying.
     </p>
 
     <div class="skills-grid">
       <div class="card skill-category">
-        <h3>Operating Systems</h3>
+        <h2>Operating Systems</h2>
         <ul>
           <li>Windows — Comfortable</li>
-          <li>Linux (Ubuntu) — Beginner</li>
-          <li>Linux (Debian) — Learning</li>
+          <li>Ubuntu — Beginner</li>
+          <li>Debian — Beginner</li>
+          <li>Windows Server — Learning</li>
         </ul>
       </div>
 
       <div class="card skill-category">
-        <h3>Networking</h3>
-        <ul>
-          <li>TCP/IP — Learning</li>
-          <li>DNS — Learning</li>
-          <li>DHCP — Learning</li>
-          <li>SSH — Beginner</li>
-        </ul>
-      </div>
-
-      <div class="card skill-category">
-        <h3>Command Line</h3>
+        <h2>Scripting</h2>
         <ul>
           <li>Bash — Beginner</li>
+          <li>Python — Learning</li>
           <li>PowerShell — Learning</li>
+        </ul>
+      </div>
+
+      <div class="card skill-category">
+        <h2>Containers</h2>
+        <ul>
+          <li>Docker — Beginner</li>
+          <li>Docker Compose — Beginner</li>
+        </ul>
+      </div>
+
+      <div class="card skill-category">
+        <h2>Version Control and CI/CD</h2>
+        <ul>
           <li>Git — Beginner</li>
+          <li>GitHub — Comfortable</li>
+          <li>GitHub Actions — Learning</li>
         </ul>
       </div>
 
       <div class="card skill-category">
-        <h3>Scripting</h3>
+        <h2>Storage and Home Lab</h2>
         <ul>
-          <li>Bash Scripting — Learning</li>
-          <li>PowerShell Scripting — Learning</li>
+          <li>TrueNAS — Beginner</li>
+          <li>Self-hosting and Linux services — Beginner</li>
         </ul>
       </div>
 
       <div class="card skill-category">
-        <h3>Tools</h3>
+        <h2>Networking</h2>
         <ul>
-          <li>GitHub — Beginner</li>
-          <li>VS Code — Beginner</li>
-          <li>GitHub Pages — Learning</li>
-          <li>VirtualBox — Learning</li>
-        </ul>
-      </div>
-
-      <div class="card skill-category">
-        <h3>Documentation</h3>
-        <ul>
-          <li>Markdown — Comfortable</li>
-          <li>Technical Writing — Learning</li>
+          <li>SSH — Beginner</li>
+          <li>TCP/IP — Beginner</li>
+          <li>DNS — Learning</li>
+          <li>DHCP — Learning</li>
         </ul>
       </div>
     </div>
 
     <section>
       <h2>Skill Level Labels</h2>
-      <p>I use honest labels to describe my proficiency:</p>
+      <p>I use honest text labels, not stars, percentages, or progress bars:</p>
       <ul>
-        <li><strong>Learning</strong> — Currently studying or just starting</li>
-        <li><strong>Beginner</strong> — Can use with guidance and reference</li>
-        <li><strong>Comfortable</strong> — Can use independently for common tasks</li>
-        <li><strong>Intermediate</strong> — Can use confidently and troubleshoot issues</li>
+        <li><strong>Learning</strong> — Currently studying or practicing the basics</li>
+        <li><strong>Beginner</strong> — Can use it for simple tasks with guidance or documentation</li>
+        <li><strong>Comfortable</strong> — Can use it independently for common tasks</li>
+        <li><strong>Intermediate</strong> — Can troubleshoot, explain, and apply it across realistic scenarios</li>
+      </ul>
+    </section>
+
+    <section class="planned-next">
+      <h2>Planned Next</h2>
+      <p>These are tools I have not started yet but plan to learn. They stay here until I have actually used them.</p>
+      <ul>
+        <li>Ansible</li>
+        <li>Terraform</li>
+        <li>Proxmox</li>
+        <li>Prometheus and Grafana</li>
+        <li>A cloud platform (AWS or Azure)</li>
       </ul>
     </section>
   </main>
 
   <footer>
-    <p>&copy; 2026 Sky. Built with HTML, CSS, and JavaScript.</p>
-    <p>Built as part of my IT learning journey.</p>
+    <p>Sky Yeung</p>
+    <div class="footer-links">
+      <a href="https://github.com/iKiray" target="_blank" rel="noopener noreferrer">GitHub</a>
+      <a href="https://www.linkedin.com/in/ykuntin/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+    </div>
+    <p>&copy; <span id="year">2026</span> Sky Yeung. Built with HTML, CSS, JavaScript, and GitHub Pages.</p>
   </footer>
 
   <script src="js/main.js" defer></script>

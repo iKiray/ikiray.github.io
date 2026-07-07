@@ -1,89 +1,284 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Projects — Sky's IT Portfolio</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects | Sky Yeung</title>
+  <meta name="description" content="Hands-on IT projects including a self-hosted home lab, Bash scripts, Docker services, and troubleshooting write-ups.">
+  <meta property="og:title" content="Projects | Sky Yeung">
+  <meta property="og:description" content="Hands-on IT, Linux, and automation projects from a self-hosted home lab.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/og-image.png">
+  <link rel="icon" href="assets/favicon.png">
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
   <header>
-    <p class="site-title">Sky's IT Portfolio</p>
+    <p class="site-title">Sky Yeung</p>
     <p>Aspiring System Administrator | Future DevOps Engineer</p>
   </header>
 
-  <nav aria-label="Main navigation">
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="projects.html" class="active" aria-current="page">Projects</a>
-    <a href="skills.html">Skills</a>
-    <a href="resume.html">Resume</a>
-    <a href="contact.html">Contact</a>
-  </nav>
+  <div class="nav-container">
+    <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu">Menu</button>
+    <nav id="nav-menu" aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="skills.html">Skills</a>
+      <a href="projects.html" aria-current="page">Projects</a>
+      <a href="resume.html">Resume</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
 
-  <main>
+  <main id="main-content">
     <h1>Projects</h1>
     <p>
-      This page showcases my technical projects. Each project includes a description,
-      the technologies used, and what I learned from building it.
+      These are the projects I have built or am building. Each one is documented honestly,
+      including the problems I ran into and what I learned from them.
     </p>
 
-    <div class="project-grid">
-      <div class="card">
-        <h3>Home Lab Documentation</h3>
+    <div class="card-grid">
+      <div class="card project-card">
+        <img src="assets/screenshots/home-lab-overview.png"
+             alt="Home lab dashboard showing running Docker containers and TrueNAS storage pools">
+        <h2>Self-Hosted Home Lab</h2>
         <p>
-          Documentation for my home lab environment, including virtual machines,
-          networking configuration, and services I am testing. This project helps me
-          practice system administration and troubleshooting skills.
+          A home lab running Docker, TrueNAS, and several operating systems that I use to
+          learn Linux administration, containers, storage, and automation by running real services.
         </p>
-        <p><strong>Technologies:</strong> VirtualBox, Ubuntu, Windows Server, Networking</p>
-        <p><strong>Why I built it:</strong> To gain hands-on experience with server
-        setup, networking, and system configuration in a safe environment.</p>
-        <span class="status in-progress">In Progress</span>
+        <div class="tech-tags">
+          <span class="tech-tag">Docker</span>
+          <span class="tech-tag">Docker Compose</span>
+          <span class="tech-tag">TrueNAS</span>
+          <span class="tech-tag">Linux</span>
+          <span class="tech-tag">Debian</span>
+          <span class="tech-tag">Ubuntu</span>
+          <span class="tech-tag">SSH</span>
+          <span class="tech-tag">Git</span>
+        </div>
+
+        <div class="project-section">
+          <h3>Why I built it</h3>
+          <p>
+            I wanted a safe place to practice real system administration instead of only reading
+            about it, and to run my own services end to end.
+          </p>
+        </div>
+
+        <div class="project-section">
+          <h3>Challenges</h3>
+          <p>
+            A Debian server experienced a full hard freeze that I had to diagnose from logs, and
+            I had to work through Docker networking and persistent storage issues.
+          </p>
+        </div>
+
+        <div class="project-section">
+          <h3>How I solved it</h3>
+          <p>
+            I worked through the system logs to narrow the freeze down to a likely kernel or
+            hardware fault, installed smartmontools to watch drive health, and set up an external
+            heartbeat monitor so I would be alerted if the machine went down again.
+          </p>
+        </div>
+
+        <div class="project-section">
+          <h3>What I learned</h3>
+          <p>
+            How to read system logs during an outage, how to reason about kernel versus hardware
+            causes, and how to add monitoring so problems surface earlier.
+          </p>
+        </div>
+
+        <div class="project-section">
+          <h3>Future improvements</h3>
+          <p>
+            Add automated backups, add container health checks, document the network layout,
+            and add a status dashboard.
+          </p>
+        </div>
+
+        <div class="project-links">
+          <a href="https://github.com/iKiray" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">GitHub</a>
+        </div>
       </div>
 
-      <div class="card">
-        <h3>PowerShell Practice Scripts</h3>
+      <div class="card project-card">
+        <h2>Bash Backup Script</h2>
         <p>
-          A collection of PowerShell scripts I have written while learning automation
-          and system administration. Scripts cover user management, file operations,
-          and system information gathering.
+          A Bash script that backs up important home lab data to a separate location with
+          logging and timestamped folders.
         </p>
-        <p><strong>Technologies:</strong> PowerShell, Windows</p>
-        <p><strong>Why I built it:</strong> To practice scripting fundamentals and
-        learn how to automate repetitive administrative tasks.</p>
-        <span class="status in-progress">In Progress</span>
+        <div class="tech-tags">
+          <span class="tech-tag">Bash</span>
+          <span class="tech-tag">Linux</span>
+          <span class="tech-tag">Cron</span>
+        </div>
+
+        <div class="project-section">
+          <h3>Why I built it</h3>
+          <p>
+            I needed a simple, repeatable way to back up my home lab data without relying on
+            a manual process.
+          </p>
+        </div>
+
+        <div class="project-section">
+          <h3>Challenges</h3>
+          <p>
+            Handling paths with spaces, creating proper logging, and making the script idempotent
+            so it does not create duplicate backups.
+          </p>
+        </div>
+
+        <div class="project-section">
+          <h3>How I solved it</h3>
+          <p>
+            Used quoted variables throughout, added a log file with timestamps, and used rsync
+            to avoid copying unchanged files.
+          </p>
+        </div>
+
+        <div class="project-section">
+          <h3>What I learned</h3>
+          <p>
+            How to write defensive Bash scripts, how to use rsync for incremental backups, and
+            how to schedule tasks with cron.
+          </p>
+        </div>
+
+        <div class="project-section">
+          <h3>Future improvements</h3>
+          <p>
+            Add email or notification on failure, add retention policy to remove old backups,
+            and add restore testing.
+          </p>
+        </div>
       </div>
 
-      <div class="card">
-        <h3>Bash Command Practice</h3>
+      <div class="card project-card">
+        <h2>System Health Monitor Script</h2>
         <p>
-          Notes and scripts from my Bash command-line practice. Includes file management,
-          text processing, system monitoring, and basic shell scripting exercises.
+          A script that checks disk usage, memory, and service status, and logs warnings
+          when thresholds are exceeded.
         </p>
-        <p><strong>Technologies:</strong> Bash, Linux, Git</p>
-        <p><strong>Why I built it:</strong> To build confidence with the Linux command
-        line and understand how shell scripts can automate tasks.</p>
-        <span class="status in-progress">In Progress</span>
+        <div class="tech-tags">
+          <span class="tech-tag">Bash</span>
+          <span class="tech-tag">Linux</span>
+          <span class="tech-tag">Cron</span>
+        </div>
+
+        <div class="project-section">
+          <h3>Why I built it</h3>
+          <p>
+            I wanted early warnings when a server was running low on disk or memory instead
+            of finding out after something broke.
+          </p>
+        </div>
+
+        <div class="project-section">
+          <h3>Challenges</h3>
+          <p>
+            Parsing command output reliably and making the script portable across different
+            Linux distributions.
+          </p>
+        </div>
+
+        <div class="project-section">
+          <h3>How I solved it</h3>
+          <p>
+            Used standard tools like df and free with awk to extract values, and kept
+            the logic simple so it works on most Linux systems.
+          </p>
+        </div>
+
+        <div class="project-section">
+          <h3>What I learned</h3>
+          <p>
+            How to parse CLI output in Bash, how to use exit codes, and how to think about
+            monitoring as a habit rather than a one-time fix.
+          </p>
+        </div>
+
+        <div class="project-section">
+          <h3>Future improvements</h3>
+          <p>
+            Add notification support, add more checks for Docker containers, and
+            rewrite parts in Python for easier maintenance.
+          </p>
+        </div>
       </div>
 
-      <div class="card">
-        <h3>Portfolio Website</h3>
+      <div class="card project-card">
+        <h2>Portfolio Website</h2>
         <p>
           A personal website built with HTML, CSS, and JavaScript to document my IT
-          learning journey and technical projects. This site is deployed using GitHub Pages.
+          learning journey and technical projects, deployed with GitHub Pages.
         </p>
-        <p><strong>Technologies:</strong> HTML, CSS, JavaScript, Git, GitHub Pages</p>
-        <p><strong>Why I built it:</strong> To create a central place for my work and
-        to practice web development fundamentals, version control, and deployment.</p>
-        <span class="status in-progress">In Progress</span>
+        <div class="tech-tags">
+          <span class="tech-tag">HTML</span>
+          <span class="tech-tag">CSS</span>
+          <span class="tech-tag">JavaScript</span>
+          <span class="tech-tag">Git</span>
+          <span class="tech-tag">GitHub Pages</span>
+        </div>
+
+        <div class="project-section">
+          <h3>Why I built it</h3>
+          <p>
+            I wanted a central place to document my work, practice version control, and
+            have something professional to show during my job search.
+          </p>
+        </div>
+
+        <div class="project-section">
+          <h3>Challenges</h3>
+          <p>
+            Keeping content honest without underselling real work, managing the same navigation
+            across multiple pages, and making the site accessible.
+          </p>
+        </div>
+
+        <div class="project-section">
+          <h3>How I solved it</h3>
+          <p>
+            Used a phased spec to stay focused, kept the structure simple with plain HTML and CSS,
+            and followed accessibility basics from the start.
+          </p>
+        </div>
+
+        <div class="project-section">
+          <h3>What I learned</h3>
+          <p>
+            How to plan a small web project in phases, how to write semantic HTML, and how
+            to deploy with GitHub Pages.
+          </p>
+        </div>
+
+        <div class="project-section">
+          <h3>Future improvements</h3>
+          <p>
+            Add more project screenshots, improve the mobile navigation, add a working contact
+            form, and keep adding projects as I build them.
+          </p>
+        </div>
+
+        <div class="project-links">
+          <a href="https://github.com/iKiray" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">GitHub</a>
+        </div>
       </div>
     </div>
   </main>
 
   <footer>
-    <p>&copy; 2026 Sky. Built with HTML, CSS, and JavaScript.</p>
-    <p>Built as part of my IT learning journey.</p>
+    <p>Sky Yeung</p>
+    <div class="footer-links">
+      <a href="https://github.com/iKiray" target="_blank" rel="noopener noreferrer">GitHub</a>
+      <a href="https://www.linkedin.com/in/ykuntin/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+    </div>
+    <p>&copy; <span id="year">2026</span> Sky Yeung. Built with HTML, CSS, JavaScript, and GitHub Pages.</p>
   </footer>
 
   <script src="js/main.js" defer></script>

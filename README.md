@@ -1,35 +1,33 @@
-# IT Portfolio Website
+# Portfolio Website
 
-This is my personal IT portfolio website. It is being built with HTML, CSS, and
-JavaScript to document my technical projects, learning progress, home lab work,
-and career development.
+A personal portfolio website built with HTML, CSS, and JavaScript to document my
+IT learning journey, projects, skills, and resume.
 
-## Purpose
+## Live Site
+[https://ikiray.github.io/](https://ikiray.github.io/)
 
-The goal of this project is to create a professional portfolio that acts as:
-- An online resume
-- A project showcase
-- A home lab documentation hub
-- A learning journal
-- A central place for my technical work
-
-## Technologies Used
+## Built With
 - HTML
 - CSS
 - JavaScript
 - Git
 - GitHub Pages
 
-## Current Status
+## Pages
+- Home
+- About
+- Skills
+- Projects
+- Resume
+- Contact
+- 404
 
-Phase 1 is focused on creating the foundation of the site, including the file
-structure, basic pages, layout, styling, and deployment.
+## Current Phase
+Phase 2: Core Portfolio Content
 
-## Planned Improvements
-
-Future phases will include project writeups, screenshots, resume updates,
-improved styling, accessibility improvements, and more detailed documentation.
-
-## Live Site
-
-The site is available through GitHub Pages at [https://ikiray.github.io/](https://ikiray.github.io/).
+## Future Improvements
+- Add more project screenshots
+- Improve mobile navigation
+- Add a working contact form
+- Improve accessibility
+- Add more projects as they are built

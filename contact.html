@@ -1,47 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Contact — Sky's IT Portfolio</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | Sky Yeung</title>
+  <meta name="description" content="Get in touch with Sky Yeung about IT support, system administration, Linux, scripting, and entry-level technical opportunities.">
+  <meta property="og:title" content="Contact | Sky Yeung">
+  <meta property="og:description" content="Connect with Sky Yeung about IT, Linux, and automation opportunities.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/og-image.png">
+  <link rel="icon" href="assets/favicon.png">
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
   <header>
-    <p class="site-title">Sky's IT Portfolio</p>
+    <p class="site-title">Sky Yeung</p>
     <p>Aspiring System Administrator | Future DevOps Engineer</p>
   </header>
 
-  <nav aria-label="Main navigation">
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="projects.html">Projects</a>
-    <a href="skills.html">Skills</a>
-    <a href="resume.html">Resume</a>
-    <a href="contact.html" class="active" aria-current="page">Contact</a>
-  </nav>
+  <div class="nav-container">
+    <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu">Menu</button>
+    <nav id="nav-menu" aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="skills.html">Skills</a>
+      <a href="projects.html">Projects</a>
+      <a href="resume.html">Resume</a>
+      <a href="contact.html" aria-current="page">Contact</a>
+    </nav>
+  </div>
 
-  <main>
+  <main id="main-content">
     <h1>Contact</h1>
     <p>
-      I am open to connecting with other IT professionals, mentors, and anyone interested
-      in my work. Feel free to reach out through the channels below.
+      I am open to connecting about IT support, system administration, Linux, scripting,
+      automation, and entry-level technical opportunities.
     </p>
 
     <section>
       <h2>Get in Touch</h2>
       <ul class="contact-links">
         <li>
-          <span><strong>GitHub</strong></span>
-          <span><a href="https://github.com/iKiray">github.com/iKiray</a></span>
+          <span><strong>LinkedIn</strong></span>
+          <span><a href="https://www.linkedin.com/in/ykuntin/" target="_blank" rel="noopener noreferrer">linkedin.com/in/ykuntin</a></span>
         </li>
         <li>
-          <span><strong>LinkedIn</strong></span>
-          <span>Coming soon</span>
+          <span><strong>GitHub</strong></span>
+          <span><a href="https://github.com/iKiray" target="_blank" rel="noopener noreferrer">github.com/iKiray</a></span>
         </li>
         <li>
           <span><strong>Email</strong></span>
-          <span>Coming soon</span>
+          <span><a href="mailto:ykuntin@gmail.com">ykuntin@gmail.com</a></span>
+        </li>
+        <li>
+          <span><strong>Resume</strong></span>
+          <span><a href="assets/resume/resume.pdf" download>Download Resume (PDF)</a></span>
         </li>
       </ul>
     </section>
@@ -57,17 +72,21 @@
     </section>
 
     <section>
-      <h2>Response Time</h2>
+      <h2>Note</h2>
       <p>
-        I typically respond to messages within a few days. For urgent matters,
-        please mention that in your message.
+        This site is hosted on GitHub Pages, which cannot process contact forms. The
+        best way to reach me is through LinkedIn, GitHub, or email.
       </p>
     </section>
   </main>
 
   <footer>
-    <p>&copy; 2026 Sky. Built with HTML, CSS, and JavaScript.</p>
-    <p>Built as part of my IT learning journey.</p>
+    <p>Sky Yeung</p>
+    <div class="footer-links">
+      <a href="https://github.com/iKiray" target="_blank" rel="noopener noreferrer">GitHub</a>
+      <a href="https://www.linkedin.com/in/ykuntin/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+    </div>
+    <p>&copy; <span id="year">2026</span> Sky Yeung. Built with HTML, CSS, JavaScript, and GitHub Pages.</p>
   </footer>
 
   <script src="js/main.js" defer></script>
