@@ -104,3 +104,34 @@ broken resume download, broken OG image).
 
 **Implication:** If new asset files are added in the future, update all seven
 HTML `<head>` blocks and any download links at the same time.
+
+---
+
+## Project card links commented out instead of pointing at a generic profile
+
+**Decision:** The "GitHub Repository" / "Documentation" links in both project
+cards on `projects.html` are left as an HTML comment (`REPOSITORY_URL`,
+`DOCUMENTATION_URL` placeholders) rather than linking to the general GitHub
+profile.
+
+**Why:** A generic profile link looks like a placeholder wasn't filled in and
+undersells the project. Leaving no link at all reads as more honest than a
+link that doesn't actually point at that project's source.
+
+**Implication:** Uncomment and fill in the real URL per project as each one
+gets its own repository, instead of adding a profile-wide link back.
+
+---
+
+## Certifications section dropped from the resume page
+
+**Decision:** `resume.html` does not include a Certifications section, even
+though `docs/phase-02-spec.md` originally called for one.
+
+**Why:** The actual resume PDF (`Sky_Yeung_Resume_HelpDesk.pdf`) does not list
+any certifications, and the HTML resume is meant to match the PDF exactly
+(see the resume/PDF sync rule in the spec).
+
+**Implication:** Add the section back once a certification is actually
+completed or in progress, worded honestly (`Completed` / `Studying` /
+`Planned`), rather than restoring it as an empty placeholder.
