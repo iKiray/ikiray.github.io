@@ -647,12 +647,12 @@ Phase 2: Core Portfolio Content
 - [ ] Skill levels use honest labels
 - [ ] Planned tools are kept separate from active skills
 - [ ] At least one complete project is added (home lab recommended)
-- [ ] Project includes screenshot with alt text
-- [ ] Project includes challenges and lessons learned
-- [ ] Resume content is available in HTML and matches the PDF
+- [x] Project includes screenshot with alt text
+- [x] Project includes challenges and lessons learned
+- [x] Resume content is available in HTML and matches the PDF
 - [x] Resume PDF is stored in `assets/resume/Sky_Yeung_Resume_HelpDesk.pdf`
-- [ ] Resume download button works
-- [ ] Contact page includes LinkedIn, GitHub, email, and resume link
+- [x] Resume download button works
+- [x] Contact page includes LinkedIn, GitHub, email, and resume link
 
 ### Technical Completion
 - [ ] Each page has a proper title, meta description, and Open Graph tags
