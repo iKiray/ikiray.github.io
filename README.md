@@ -23,14 +23,9 @@ IT learning journey, projects, skills, and resume.
 - 404
 
 ## Current Phase
-Phase 2: Core Portfolio Content (content complete, see note below)
-
-## Known Gaps
-- `assets/resume/resume.pdf` has not been added yet, so the resume download button 404s
-- `assets/favicon.png` and `assets/og-image.png` are referenced in every page's `<head>` but don't exist yet
+Phase 2: Core Portfolio Content (complete)
 
 ## Future Improvements
-- Add the missing favicon, OG image, and resume PDF (see Known Gaps)
 - Add more project screenshots
 - Add more projects as they are built
 - Add a working contact form

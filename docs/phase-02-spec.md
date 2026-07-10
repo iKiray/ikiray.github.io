@@ -55,8 +55,8 @@ Phase 2 focuses on content, structure, and basic presentation for the core portf
 - `js/main.js`
 - `assets/images/`
 - `assets/screenshots/`
-- `assets/resume/resume.pdf`
-- `assets/favicon.png` *(new)*
+- `assets/resume/Sky_Yeung_Resume_HelpDesk.pdf`
+- `assets/favicon.ico` *(new)*
 - `assets/og-image.png` *(new, optional but recommended)*
 
 ---
@@ -101,7 +101,7 @@ Every page needs a proper `<head>` so the site looks correct in search results a
   <meta property="og:type" content="website">
   <meta property="og:image" content="assets/og-image.png">
 
-  <link rel="icon" href="assets/favicon.png">
+  <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
   <link rel="stylesheet" href="css/styles.css">
 </head>
 ```
@@ -415,7 +415,7 @@ Make your resume available on the site. Do not only link a PDF. Show the key inf
 **7. Resume Download Button**
 
 ```html
-<a href="assets/resume/resume.pdf" download>Download Resume (PDF)</a>
+<a href="assets/resume/Sky_Yeung_Resume_HelpDesk.pdf" download>Download Resume (PDF)</a>
 ```
 
 Keep the HTML resume and the PDF in sync so they never disagree.
@@ -650,7 +650,7 @@ Phase 2: Core Portfolio Content
 - [ ] Project includes screenshot with alt text
 - [ ] Project includes challenges and lessons learned
 - [ ] Resume content is available in HTML and matches the PDF
-- [ ] Resume PDF is stored in `assets/resume/resume.pdf`
+- [x] Resume PDF is stored in `assets/resume/Sky_Yeung_Resume_HelpDesk.pdf`
 - [ ] Resume download button works
 - [ ] Contact page includes LinkedIn, GitHub, email, and resume link
 

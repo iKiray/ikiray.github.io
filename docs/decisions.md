@@ -84,18 +84,23 @@ reduced-motion fallback if it animates.
 
 ---
 
-## Referenced asset files not yet created
+## Referenced asset files — updated
 
-**Decision/status:** `index.html` and friends already reference
-`assets/favicon.png`, `assets/og-image.png`, and `assets/resume/resume.pdf`,
-but none of those files exist yet in `assets/` — only `.gitkeep` placeholders
-remain in `images/`, `screenshots/`, and `resume/`.
+**Decision/status:** The originally referenced asset filenames were corrected
+to match the actual supplied files:
 
-**Why noted here:** This isn't a design decision, it's a known gap from
-building the markup ahead of the actual asset files. Recorded so it isn't
-mistaken for "done" — see [[roadmap]] Phase 2 checklist, where "Resume PDF
-linked" is intentionally left unchecked.
+- `assets/favicon.png` → `assets/favicon.ico`
+- `assets/resume/resume.pdf` → `assets/resume/Sky_Yeung_Resume_HelpDesk.pdf`
+- `assets/og-image.png` — unchanged, file exists
+- `assets/screenshots/home-lab-overview.png` — unchanged, file exists
 
-**Implication:** Before treating Phase 2 as fully complete, add the real
-favicon, OG image, and resume PDF to `assets/`, or the favicon/link-preview/
-download features will silently fail in production.
+All HTML pages now reference the correct filenames. The favicon link includes
+`type="image/x-icon"` for the `.ico` format.
+
+**Why noted here:** The original markup was written ahead of the actual asset
+files, and the filenames did not match what was later supplied. Correcting
+them was necessary to avoid silent failures in production (broken favicon,
+broken resume download, broken OG image).
+
+**Implication:** If new asset files are added in the future, update all seven
+HTML `<head>` blocks and any download links at the same time.

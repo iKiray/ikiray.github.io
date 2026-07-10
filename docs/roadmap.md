@@ -472,7 +472,7 @@ Do not only upload a PDF.
 Also store the resume PDF in the project folder:
 
 ```text
-assets/resume/resume.pdf
+assets/resume/Sky_Yeung_Resume_HelpDesk.pdf
 ```
 
 ---
@@ -507,7 +507,7 @@ Avoid listing:
 - [x] At least one project added
 - [x] Resume page completed
 - [x] Contact page completed
-- [ ] Resume PDF linked (download button exists in `resume.html`, but `assets/resume/resume.pdf` has not been added yet — the link currently 404s)
+- [x] Resume PDF linked (download button exists in `resume.html`, `assets/resume/Sky_Yeung_Resume_HelpDesk.pdf` added)
 - [x] GitHub and LinkedIn linked
 - [x] Site looks clean on mobile and desktop
 
