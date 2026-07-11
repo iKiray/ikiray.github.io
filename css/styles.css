@@ -103,3 +103,11 @@ a:hover{text-decoration:underline}
   outline:1px solid var(--color-accent);
   border-radius:4px;
 }
+
+.footer{
+  margin-top:2rem;
+  padding:1.5rem;
+  text-align:center;
+  opacity:0.5;
+  font-size:0.85rem;
+}
