@@ -11,10 +11,62 @@ body{
   background:var(--color-bg);
   color:var(--color-text);
   min-height:100vh;
+  width:100%;
   display:flex;
+  flex-direction:column;
   align-items:center;
-  justify-content:center;
 }
 
 a{color:var(--color-accent);text-decoration:none}
 a:hover{text-decoration:underline}
+
+.header{
+  text-align:center;
+  padding:4rem 1.5rem 2rem;
+}
+
+.header h1{
+  font-size:2.5rem;
+  margin-bottom:0.25rem;
+}
+
+.header p{
+  font-size:1.1rem;
+  opacity:0.7;
+  margin-bottom:1.5rem;
+}
+
+.social-links{
+  display:flex;
+  gap:1.25rem;
+  justify-content:center;
+}
+
+.social-links a{
+  color:var(--color-text);
+  opacity:0.7;
+  transition:opacity 0.2s;
+}
+
+.social-links a:hover{
+  opacity:1;
+  text-decoration:none;
+}
+
+.main{
+  max-width:640px;
+  width:100%;
+  padding:2rem 2rem;
+  border:1px solid rgba(255,255,255,0.15);
+  border-radius:8px;
+}
+
+.main h2{
+  font-size:1.5rem;
+  margin-bottom:1rem;
+}
+
+.main p{
+  line-height:1.7;
+  opacity:0.85;
+}
