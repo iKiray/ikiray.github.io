@@ -70,3 +70,28 @@ a:hover{text-decoration:underline}
   line-height:1.7;
   opacity:0.85;
 }
+
+.page-nav{
+  display:flex;
+  gap:1.5rem;
+  justify-content:center;
+  margin-top:1.5rem;
+}
+
+.page-nav a{
+  color:var(--color-text);
+  opacity:0.6;
+  font-size:0.95rem;
+  letter-spacing:0.05em;
+  transition:opacity 0.2s;
+}
+
+.page-nav a:hover,
+.page-nav a.active{
+  opacity:1;
+  color:var(--color-accent);
+}
+
+.page-nav a.active{
+  text-decoration:underline;
+}
