@@ -1,20 +1,11 @@
-document.addEventListener('DOMContentLoaded', () => {
+(function () {
   const root = document.documentElement;
   const toggle = document.querySelector('.theme-toggle');
   if (!toggle) return;
 
-  const getStored = (key) => {
-    try {
-      return localStorage.getItem(key);
-    } catch (e) {
-      return null;
-    }
-  };
-
+  // Writing may fail in restricted contexts; persistence is silently unavailable
   const setStored = (key, value) => {
-    try {
-      localStorage.setItem(key, value);
-    } catch (e) {}
+    try { localStorage.setItem(key, value); } catch (e) {}
   };
 
   const applyTheme = (dark) => {
@@ -24,7 +15,8 @@ document.addEventListener('DOMContentLoaded', () => {
     toggle.setAttribute('aria-label', dark ? 'Disable dark mode' : 'Enable dark mode');
   };
 
-  applyTheme(getStored('theme') === 'dark');
+  // Button text/init: read current state set by the inline init script
+  applyTheme(root.classList.contains('dark-mode'));
 
   toggle.addEventListener('click', () => {
     const next = !root.classList.contains('dark-mode');
@@ -32,9 +24,8 @@ document.addEventListener('DOMContentLoaded', () => {
     setStored('theme', next ? 'dark' : 'light');
   });
 
+  // Synchronize theme across open tabs on the same origin
   window.addEventListener('storage', (e) => {
-    if (e.key === 'theme') {
-      applyTheme(e.newValue === 'dark');
-    }
+    if (e.key === 'theme') applyTheme(e.newValue === 'dark');
   });
-});
+})();

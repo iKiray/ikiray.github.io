@@ -5,7 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projects</title>
     <link rel="icon" type="image/png" href="assets/github.png">
-    <script src="js/theme-init.js"></script>
+    <script>
+      // localStorage may be unavailable in private browsing or restricted contexts
+      try { if (localStorage.getItem('theme') === 'dark') document.documentElement.classList.add('dark-mode'); } catch (e) {}
+    </script>
     <link rel="stylesheet" href="css/styles.css">
     <script defer src="js/main.js"></script>
 </head>

@@ -44,10 +44,6 @@ body{
   transition:background-color 0.2s ease, color 0.2s ease;
 }
 
-@media(prefers-reduced-motion:reduce){
-  body{transition:none}
-}
-
 a{color:var(--color-accent);text-decoration:none;text-underline-offset:3px}
 a:hover{text-decoration:underline;text-decoration-color:var(--color-link-underline)}
 
@@ -308,4 +304,11 @@ a:hover{text-decoration:underline;text-decoration-color:var(--color-link-underli
   padding-left:1.25rem;
   margin-top:0.75rem;
   line-height:1.8;
+}
+
+@media(prefers-reduced-motion:reduce){
+  body,
+  .social-links a,
+  .page-nav a,
+  .skill-card{transition:none}
 }
